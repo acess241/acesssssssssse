@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro para o Curso de Libras</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f3ff; /* Cor de fundo lilás claro */
+            color: #4a4a4a;
+            background-image: url('https://i.postimg.cc/7ZPY9XLV/IMG-2257.jpg'); /* Imagem do plano de fundo */
+            background-size: 100% 120%; /* Aumenta a imagem de fundo */
+            background-position: center center;
+            background-attachment: fixed; /* Fixa o fundo para dar um efeito parallax */
+            background-repeat: no-repeat;
+            min-height: 100vh; /* Garantir que o conteúdo ocupe pelo menos 100% da altura da tela */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #b297d6; /* Cor de fundo roxo claro */
+            color: white;
+            text-align: center;
+            padding: 40px 20px; /* Cabeçalho com mais espaço */
+        }
+
+        header .logo {
+            width: 700px; /* Largura do logotipo */
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        /* Formulário de cadastro */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 30px;
+            background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin-top: 80px;
+            flex: 1; /* Faz o conteúdo ocupar o espaço disponível */
+        }
+
+        h2 {
+            font-size: 30px;
+            color: #b297d6; /* Cor roxa claro para os títulos */
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            color: #4a4a4a;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .btn {
+            background-color: #b297d6; /* Cor de fundo roxo claro */
+            color: white;
+            padding: 14px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            cursor: pointer;
+            text-align: center;
+            border: none;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background-color: #9a74b5; /* Cor roxa escura para o hover */
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #b297d6; /* Cor de fundo roxo claro */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        /* Formatação do botão de envio */
+        .form-btn-container {
+            text-align: center;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header .logo {
+                width: 100%;
+            }
+
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho da página -->
+    <header>
+        <img class="logo" src="https://i.postimg.cc/zDPNC5gx/IMG-2255.jpg" alt="Logo do Curso de Libras">
+    </header>
+
+    <!-- Formulário de cadastro -->
+    <div class="content">
+        <h2>Cadastro para o Curso de Libras</h2>
+        <p>Preencha o formulário abaixo para se inscrever no nosso curso de Libras. Vamos entrar em contato com você em breve!</p>
+
+        <!-- Formulário -->
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Nome Completo</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Endereço</label>
+                <input type="text" id="address" name="address" placeholder="Digite seu endereço" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Mensagem (opcional)</label>
+                <textarea id="message" name="message" rows="4" placeholder="Caso deseje, deixe uma mensagem"></textarea>
+            </div>
+
+            <div class="form-btn-container">
+                <button type="submit" class="btn">Enviar Cadastro</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Curso Profissional de Libras - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
